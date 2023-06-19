@@ -1,1 +1,1 @@
-
+The Online Instrument Purchase App is a web application designed to facilitate the online purchase of musical instruments. It provides a user-friendly interface for browsing, searching, and purchasing a wide range of instruments.
