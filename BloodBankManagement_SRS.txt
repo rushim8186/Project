@@ -4,9 +4,8 @@ Title: Software Requirements Specification for Blood Bank Management System
 
 Team:
 Project Manager
-Business Analyst
 Developers
-Quality Assurance Team
+
 
 Objective (Purpose):
 The Blood Bank Management System is designed to automate and streamline the processes of blood inventory management, donor registration, and blood request handling. The system aims to provide an efficient and organized way for blood banks to manage their operations and ensure a steady supply of blood for patients in need.
