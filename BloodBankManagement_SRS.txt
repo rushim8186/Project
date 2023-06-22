@@ -1,168 +1,58 @@
-Document: Software Requirements Specification Document
+***Document : System Requirement Specification Document
 
-Title: Software Requirements Specification for Blood Bank Management System
+***Title : BloodBank Management System.
 
-Team:
-Project Manager
-Developers
+***Objective (Purpose) : 
+	The Blood Bank Management System is a website application aimed at efficiently managing the operations of a blood bank. The system is designed to facilitate the process of blood donation, inventory management, and the coordination of blood requests and deliveries. This Software Requirements Specification document outlines the functional and non-functional requirements for the development of the Blood Bank Management System.
 
+***Scope : 
+• Secure registration and blood stock availability for users.
+• User can buy blood online.
+• Browsing through the System to see the availability of blood group required. Donor can register online to donate the blood.
+• This web application will help the people in need of blood to save the life of their relative or friend.
 
-Objective (Purpose):
-The Blood Bank Management System is designed to automate and streamline the processes of blood inventory management, donor registration, and blood request handling. The system aims to provide an efficient and organized way for blood banks to manage their operations and ensure a steady supply of blood for patients in need.
+***Requirements :
+ 
+***Functional Requirements:
 
-Scope:
-The Blood Bank Management System will include the following features:
+1)Admin:
+-Manage the Registration of users, donors, and organization.
+-View User/Donor and organization information.
 
-Donor Registration:
-Allow individuals to register as blood donors by providing personal information, medical history, and blood type.
-Blood Inventory Management: Maintain a record of available blood units, including blood type, quantity, storage location, and expiration dates.
-Blood Request Management: Enable healthcare institutions to place blood requests, specifying the required blood type, quantity, and urgency.
-Donor Eligibility Verification: Implement eligibility checks to ensure donors meet the necessary criteria for blood donation.
-Appointment Scheduling: Facilitate the scheduling of donor appointments for blood donation.
-Notifications: Send automated notifications to donors regarding upcoming appointments, blood request status, and blood shortage alerts.
-Reporting and Analytics: Generate reports on blood inventory, donor statistics, blood request fulfillment, and other key metrics for analysis and decision-making.
-Definitions:
+2)User:
+-Check the blood availability.
+-Register
+-login
+-Post the blood request
 
-Blood Bank: 
-A medical facility responsible for collecting, testing, storing, and distributing blood and blood products.
+3)Donor:
+-Register
+-login
+-Book an appointment to donate blood.
 
-Donor: 
-An individual who voluntarily provides blood for medical use.
+4) organization:
+-registration
+-login
+-Schedule the blood donation campaign.
 
-Blood Inventory: 
-The stock of available blood units maintained by the blood bank.
+Non-Functional Requirements:
 
-Blood Request: 
-A formal request from a healthcare institution for specific blood types and quantities.
+1)Availability-
+-Users & Donors can access this management system from anywhere
+from this web application.
 
-Donor Eligibility: 
-The criteria and requirements a donor must meet to be eligible for blood donation.
+2)Security:
+-Users and Donors information should be kept confidential under security system.
+-The system automatically logs out after the period of inactivity.
 
-Appointment: 
-A scheduled time for a donor to visit the blood bank for blood donation.
+3)Reliability:
+-System will be reliable enough to provide intact information about to user and donor.
+-Once the blood is donated or request for blood is post user or donor will
+ receive the notification on the same.
 
-Requirements:
-
-Functional Requirements:
-
-A)Donor Registration :
-1. The system shall allow individuals to register as blood donors by providing their personal information, including name, contact details, age, and gender.
-2. The system shall collect and store medical history information of donors, including past illnesses, surgeries, medications, and any disqualifying conditions.
-3. The system shall record the blood type of the donor after conducting the necessary blood tests.
-4. The system shall assign a unique donor ID to each registered donor for identification and tracking purposes.
-
-B)Blood Inventory Management
-1. The system shall maintain a comprehensive record of available blood units, including blood type, quantity, storage location, and expiration dates.
-2. The system shall update the inventory in real-time when blood units are added, used, or discarded.
-3. The system shall generate alerts for low stock levels and approaching expiration dates to ensure timely actions are taken.
-4. The system shall provide search and filtering capabilities to facilitate easy retrieval of blood units based on specific criteria.
-
-C)Blood Request Management
-1. The system shall allow authorized healthcare institutions to submit blood requests, specifying the required blood type, quantity, and urgency.
-2. The system shall notify the blood bank staff about new blood requests and enable them to review and prioritize the requests.
-3. The system shall track the status of blood requests, including approval, rejection, and fulfillment.
-4. The system shall update the blood inventory automatically upon fulfilling approved blood requests.
-
-D)Donor Eligibility Verification
-1. The system shall implement predefined eligibility criteria to verify the suitability of donors for blood donation.
-2. The system shall conduct automatic checks on donor eligibility based on factors such as age, weight, medical history, recent travel, and deferral periods.
-3. The system shall notify the donor and the blood bank staff if a donor is deemed ineligible for blood donation based on the eligibility criteria.
-4. The system shall maintain a record of eligibility status for each donor, indicating whether they are eligible or ineligible for donation.
-
-E)Appointment Scheduling
-1. The system shall allow donors to schedule appointments for blood donation based on their availability and the blood bank's operational hours.
-2. The system shall provide a user-friendly interface for donors to view available time slots and select a convenient appointment date and time.
-3. The system shall send automated appointment confirmation notifications to donors, including the appointment details and any specific instructions.
-
-F)Notifications
-1. The system shall send notifications to donors regarding upcoming appointments, reminding them of the scheduled date and time.
-2. The system shall send notifications to donors in case of urgent blood shortages, encouraging them to donate if they are eligible.
-3. The system shall notify healthcare institutions about the status of their blood requests, including approval, rejection, and estimated fulfillment time.
-
-G)Reporting and Analytics
-1. The system shall generate reports on blood inventory levels, including the quantity of each blood type, storage location, and expiration dates.
-2. The system shall provide statistical reports on donor demographics, including age, gender, blood type distribution, and donation frequency.
-3. The system shall generate reports on blood request fulfillment rates, highlighting the response time and success rate in meeting requests.
-4. The system shall offer analytics capabilities to identify trends, patterns, and insights related to blood donation, inventory management, and donor behavior.
-
-Nonfunctional Requirements:
-
-A)Security
-1. The system shall implement secure user authentication and authorization mechanisms to ensure only authorized personnel can access and modify the system.
-2. The system shall encrypt sensitive data, such as donor medical history and personal information, to protect confidentiality during transmission and storage.
-3. The system shall maintain a secure backup of data to prevent loss or unauthorized access.
-4. The system shall comply with relevant data protection and privacy regulations.
-
-B)Reliability
-1. The system shall have a high level of reliability, ensuring minimal downtime and uninterrupted access to critical functionalities.
-2. The system shall regularly backup data to prevent data loss in case of system failure or unexpected events.
-3. The system shall be capable of recovering from failures gracefully and restoring normal operations promptly.
-
-C)Performance
-1. The system shall handle concurrent user requests efficiently, ensuring fast response times and minimal latency.
-2. The system shall be scalable to accommodate increasing data volume, user traffic, and future expansion.
-3. The system shall optimize database queries and operations to minimize processing time and maximize performance.
-
-D)Usability
-1. The system shall have a user-friendly interface, making it easy for donors, blood bank staff, and healthcare institutions to navigate and perform tasks.
-2. The system shall provide clear instructions and guidance to users during the registration process, appointment scheduling, and blood request submission.
-3. The system shall support multiple languages to accommodate users from different regions or with different language preferences.
-
-E)Maintainability
-1. The system shall be modularly designed and implemented, allowing for easy maintenance, enhancements, and future updates.
-2. The system shall adhere to coding and documentation standards to facilitate code maintainability and readability.
-3. The system shall provide administrative tools for managing system configurations, user roles, and permissions.
-
-F)Compatibility
-1. The system shall be compatible with commonly used web browsers, ensuring optimal performance and functionality across different platforms.
-2. The system shall support integration with external systems, such as laboratory testing equipment, to streamline data exchange and processes.
-
-Use Case Diagram:
-
-Design Phase:
- Use Case Diagram
- Activity Diagram
- State Transition Diagram
- Class Diagram
- Deployment Diagram
- Object Diagram
-
-Use Case Diagram for Blood Bank Management System:
-
-Actors:
-1. Administrator
-2. Blood Bank Staff
-3. Donor
-4. Healthcare Institution
-
-Use Cases:
-1. Administrator:
-   Manage User Accounts
-   Configure System Settings
-   Generate Reports
-   Perform Backup and Recovery
-
-2. Blood Bank Staff:
-   Register Donor
-   Update Donor Information
-   Manage Blood Inventory
-   Record Blood Donation
-   Process Blood Requests
-   Generate Reports
-
-3. Donor:
-   Register as Donor
-   Update Personal Information
-   Schedule Blood Donation Appointment
-   Check Donor Eligibility
-   View Donation History
-   View Blood Bank Locations
-
-4. Healthcare Institution:
-   Place Blood Request
-   Track Blood Request Status
-   Receive Blood Units
-   Notify Blood Bank about Used Units
-   Generate Reports
-
-
+4) Performance:
+-Basic system configuration is enough to access the web application.
+-Users and Donors can access the web application from mobile phones with minimal
+performance of the same.
+-Performance of the system remains same regardless of platform either it is laptop or
+ mobile phone.
