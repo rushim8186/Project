@@ -56,3 +56,16 @@ from this web application.
 performance of the same.
 -Performance of the system remains same regardless of platform either it is laptop or
  mobile phone.
+
+
+1)Availability:
+-Users & Donors can access this management system from anywhere from this web application.
+
+2)Security:-
+-Users and Donors information should be kept confidential under security system by Admin.-The system has encrypted password which can be seen in database.
+
+3)Reliability:--
+System will be reliable enough to provide intact information about to user and donor.-Once the blood is donated or request for blood is post user or donor will  receive the notification on the same.
+
+4) Performance:-Basic system configuration is enough to access the web application.-Users and Donors can access the web application from mobile phones with minimal performance of the same. 
+-Performance of the system remains same regardless of platform either it is laptop or  mobile phone.
